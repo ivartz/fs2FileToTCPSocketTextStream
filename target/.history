@@ -4,3 +4,6 @@ run
 lcean
 clean
 run
+clean
+build
+run

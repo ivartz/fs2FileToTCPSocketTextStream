@@ -89,18 +89,15 @@ object Main {
         import scala.concurrent.ExecutionContext.Implicits.global
         import java.net.InetSocketAddress
         // functional streams 2 to send TCP stream to local port
-        val fileToStream = Paths.get("../../data/2_no_header.csv")
-
+        val fileToStream = Paths.get("/home/jovyan/work/Master thesis/data/2_no_header.csv")
         val Fs = 10000
         val TCPPort = 54321
-
         /**
         Shouldn't really remain as a function when reduced to a call from the scheduler.
         */
         def tickSource[F[_]](period: FiniteDuration)(implicit s: Effect[F], t: Scheduler, ec: ExecutionContext): Stream[F,Unit] = {
             t.fixedRate(period)
         }
-
         /**
         Not really something that has any right to remain in the codebase.
         Sadly it's so ingrained now I cba removing it. Feel free to do so
@@ -118,12 +115,10 @@ object Main {
             }
             in => go(in).stream
         }
-
         /**
         Partitions a stream vectors of length n
         */
-        def vectorize[F[_],I](length: Int): Pipe[F,I,Vector[I]] = {
-            
+        def vectorize[F[_],I](length: Int): Pipe[F,I,Vector[I]] = {  
             def go(s: Stream[F,I]): Pull[F,Vector[I],Unit] = {
                 s.pull.unconsN(length.toLong, false).flatMap {
                     case Some((segment, tl)) => {
@@ -134,7 +129,6 @@ object Main {
             }
             in => go(in).stream
         }
-
         def throttlerPipe[F[_]: Effect,I](Fs: Int, resolution: FiniteDuration)(implicit ec: ExecutionContext): Pipe[F,I,I] = {
 
             // determined optimal time resolution to be 
@@ -171,54 +165,30 @@ object Main {
             require(windowWidth > 0,       "windowWidth must be > 0")
             require(windowWidth > overlap, "windowWidth must be wider than overlap")
             val stepsize = windowWidth - overlap
-            def go(s: Stream[F,I], last: Vector[I]): Pull[F,Vector[I],Unit] = {
+            def go(s: Stream[F,I], earlier: Vector[I]): Pull[F,Vector[I],Unit] = {
                 s.pull.unconsN(stepsize.toLong, false).flatMap {
-                    case Some((seg, tl)) =>
-                        val forced = seg.force.toVector
-                        Pull.output1(forced) >> go(tl, forced.drop(stepsize))
-                    case None => Pull.done
-                }
-            }
-
-            in => in.pull.unconsN(windowWidth.toLong, false).flatMap {
-                case Some((seg, tl)) => {
-                    val forced = seg.force.toVector
-                    Pull.output1(forced) >> go(tl, forced.drop(stepsize))
-                }
-                case None => Pull.done
-            }.stream
-        }
-
-        /**
-        Encodes int to byte arrays. Assumes 4 bit integers
-        */
-        def intToBytes[F[_]]: Pipe[F, Int, Array[Byte]] = {
-
-            def go(s: Stream[F, Int]): Pull[F,Array[Byte],Unit] = {
-                s.pull.uncons flatMap {
-                    case Some((seg, tl)) => {
-                        val data = seg.force.toArray
-                        println("done")
-                        val bb = java.nio.ByteBuffer.allocate(data.length*4)
-                        for(ii <- 0 until data.length){
-                            bb.putInt(data(ii))
-                        }
-                        Pull.output(Segment(bb.array())) >> go(tl)
+                    if (earlier.length == overlap){
+                        case Some((seg, tl)) =>
+                            val forced = earlier ++ seg.force.toVector
+                            Pull.output1(forced) >> go(tl, forced.drop(stepsize))
+                        case None => Pull.done
                     }
-                    case None => Pull.done
+                    else {
+                        case Some((seg, tl)) =>
+                            val forced = earlier ++ seg.force.toVector
+                            go(tl, forced)
+                        case None => Pull.done
+                    }
                 }
             }
-            in => go(in).stream
+            in => go(in, Vector()).stream
         }
-
         def readCSV[F[_]: Effect](fileToStream: Path, Fs: Int)(implicit ec: ExecutionContext, s: Scheduler): Stream[F,Vector[Int]] = {
             println(s"elements per sec set to $Fs")
             val reader = io.file.readAll[F](fileToStream, 4096)
                 .through(text.utf8Decode)
                 .through(text.lines)
-                
                 //.through(_.map{ csvLine => csvLine.split(",").map(_.toInt).toList.tail})
-                
                 .through(_.map{ csvLine => csvLine.split(",").tail.apply(10).toInt}) // split each text (String) line 
                                                                                      // to an array of 61 Chars representing the
                                                                                      // TimeStamp and the electrode voltages, then      
@@ -248,27 +218,10 @@ object Main {
                 }
             reader
         }
-
         val dataStream = readCSV[IO](fileToStream, Fs)
-
         // make fs2 socket server
         // start fs2 stream with
         // mystream.compile.drain.unsafeRunSync
-        //
-
-        // server: stream av stream av socket
-        /*
-        def sendStreamInTCP[F[_]](socket: Socket[F], dataStream: Stream[F, Vector[Int]]): Stream[F, Unit] = {
-            val byteDataStream: Stream[F,Byte] = dataStream
-                .through(chunkify)
-                .through(intToBytes) // Stream[Int] to Stream[Array[Byte]]. TODO: Import. 1 Int = 4 bytes
-                .through(_.map(_.toList))   
-                .through(chunkify) // Stream[Byte]
-            byteDataStream.through(socket.writes(None))
-            
-        }
-        */
-
         def sendStreamInTCP[F[_]](socket: Socket[F], dataStream: Stream[F, Vector[Int]]): Stream[F, Unit] = {
             dataStream
                 //.through(_.map(_.toString)) // convert the 80 % overlapping Vectors to String
@@ -276,6 +229,15 @@ object Main {
                 .intersperse("\n") // add newline between the windows now stored as Strings
                 .through(text.utf8Encode)
                 .through(socket.writes(None))
+                .handleErrorWith{
+                    case e: java.io.IOException => { 
+                        println(s"Connection ended because of $e")
+                        println("now exiting system")
+                        System.exit(0)                        
+                        Stream.empty 
+                    }
+                    case _ => { println("I don't fuckin know..."); Stream.empty }
+                }
         }
         println(s"now starting the server on port $TCPPort")
         server[IO](new InetSocketAddress("localhost", TCPPort))
@@ -285,5 +247,3 @@ object Main {
             .unsafeRunSync()
     }
 }
-
-

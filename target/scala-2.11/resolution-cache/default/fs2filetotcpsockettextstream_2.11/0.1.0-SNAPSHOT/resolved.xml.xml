@@ -4,7 +4,7 @@
 		module="fs2filetotcpsockettextstream_2.11"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180314103712"
+		publication="20180406105654"
 	>
 		<description>
 		fs2filetotcpsockettextstream
