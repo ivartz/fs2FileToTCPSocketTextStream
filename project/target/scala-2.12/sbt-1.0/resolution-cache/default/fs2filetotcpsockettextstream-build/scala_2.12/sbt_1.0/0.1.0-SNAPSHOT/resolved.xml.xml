@@ -4,7 +4,7 @@
 		module="fs2filetotcpsockettextstream-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180324155128"
+		publication="20180406111942"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
