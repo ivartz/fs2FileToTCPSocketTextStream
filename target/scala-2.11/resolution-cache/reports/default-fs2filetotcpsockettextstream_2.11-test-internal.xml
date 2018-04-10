@@ -7,91 +7,91 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180406111951"/>
+		date="20180410085845"/>
 	<dependencies>
 		<module organisation="co.fs2" name="fs2-io_2.11">
-			<revision name="0.10.1" status="release" pubdate="20180205224054" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/functional-streams-for-scala/fs2" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="0.10.1" status="release" pubdate="20180205224054" resolver="public" artresolver="public" homepage="https://github.com/functional-streams-for-scala/fs2" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2777" time="0" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-io_2.11/ivy-0.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/co/fs2/fs2-io_2.11/0.10.1/fs2-io_2.11-0.10.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3116" time="73" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-io_2.11/ivy-0.10.1.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/co.fs2/fs2-io_2.11/ivy-0.10.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/co/fs2/fs2-io_2.11/0.10.1/fs2-io_2.11-0.10.1.pom"/>
 				<caller organisation="default" name="fs2filetotcpsockettextstream_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="fs2-io_2.11" type="jar" ext="jar" status="no" details="" size="491377" time="0" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-io_2.11/jars/fs2-io_2.11-0.10.1.jar">
+					<artifact name="fs2-io_2.11" type="jar" ext="jar" status="successful" details="" size="491377" time="538" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-io_2.11/jars/fs2-io_2.11-0.10.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/co/fs2/fs2-io_2.11/0.10.1/fs2-io_2.11-0.10.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="co.fs2" name="fs2-core_2.11">
-			<revision name="0.10.1" status="release" pubdate="20180205224059" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/functional-streams-for-scala/fs2" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+			<revision name="0.10.1" status="release" pubdate="20180205224059" resolver="public" artresolver="public" homepage="https://github.com/functional-streams-for-scala/fs2" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2790" time="0" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-core_2.11/ivy-0.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.10.1/fs2-core_2.11-0.10.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3129" time="74" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-core_2.11/ivy-0.10.1.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/co.fs2/fs2-core_2.11/ivy-0.10.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.10.1/fs2-core_2.11-0.10.1.pom"/>
 				<caller organisation="co.fs2" name="fs2-io_2.11" conf="default, compile, runtime, master" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="0.10.1"/>
 				<caller organisation="default" name="fs2filetotcpsockettextstream_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="fs2-core_2.11" type="jar" ext="jar" status="no" details="" size="2015108" time="0" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-core_2.11/jars/fs2-core_2.11-0.10.1.jar">
+					<artifact name="fs2-core_2.11" type="jar" ext="jar" status="successful" details="" size="2015108" time="1033" location="/home/jovyan/.ivy2/cache/co.fs2/fs2-core_2.11/jars/fs2-core_2.11-0.10.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/co/fs2/fs2-core_2.11/0.10.1/fs2-core_2.11-0.10.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.typelevel" name="cats-effect_2.11">
-			<revision name="0.8" status="release" pubdate="20180103183605" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats-effect" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="6">
+			<revision name="0.8" status="release" pubdate="20180103183605" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats-effect" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="6">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="no" details="" size="3290" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-effect_2.11/ivy-0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-effect_2.11/0.8/cats-effect_2.11-0.8.pom"/>
+				<metadata-artifact status="successful" details="" size="2842" time="74" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-effect_2.11/ivy-0.8.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/org.typelevel/cats-effect_2.11/ivy-0.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-effect_2.11/0.8/cats-effect_2.11-0.8.pom"/>
 				<caller organisation="co.fs2" name="fs2-core_2.11" conf="default, compile, runtime, master" rev="0.8" rev-constraint-default="0.8" rev-constraint-dynamic="0.8" callerrev="0.10.1"/>
 				<caller organisation="default" name="fs2filetotcpsockettextstream_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.8" rev-constraint-default="0.8" rev-constraint-dynamic="0.8" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="cats-effect_2.11" type="jar" ext="jar" status="no" details="" size="307447" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-effect_2.11/jars/cats-effect_2.11-0.8.jar">
+					<artifact name="cats-effect_2.11" type="jar" ext="jar" status="successful" details="" size="307447" time="380" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-effect_2.11/jars/cats-effect_2.11-0.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-effect_2.11/0.8/cats-effect_2.11-0.8.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.typelevel" name="cats-core_2.11">
-			<revision name="1.0.1" status="release" pubdate="20171231124632" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+			<revision name="1.0.1" status="release" pubdate="20171231124632" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="3340" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-core_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.11/1.0.1/cats-core_2.11-1.0.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4726" time="80" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-core_2.11/ivy-1.0.1.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/org.typelevel/cats-core_2.11/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.11/1.0.1/cats-core_2.11-1.0.1.pom"/>
 				<caller organisation="default" name="fs2filetotcpsockettextstream_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="org.typelevel" name="cats-effect_2.11" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.8"/>
 				<artifacts>
-					<artifact name="cats-core_2.11" type="jar" ext="jar" status="no" details="" size="4796837" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-core_2.11/jars/cats-core_2.11-1.0.1.jar">
+					<artifact name="cats-core_2.11" type="jar" ext="jar" status="successful" details="" size="4796837" time="1202" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-core_2.11/jars/cats-core_2.11-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.11/1.0.1/cats-core_2.11-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.typelevel" name="cats-kernel_2.11">
-			<revision name="1.0.1" status="release" pubdate="20171231124529" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+			<revision name="1.0.1" status="release" pubdate="20171231124529" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2778" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-kernel_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.11/1.0.1/cats-kernel_2.11-1.0.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3985" time="73" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-kernel_2.11/ivy-1.0.1.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/org.typelevel/cats-kernel_2.11/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.11/1.0.1/cats-kernel_2.11-1.0.1.pom"/>
 				<caller organisation="org.typelevel" name="cats-core_2.11" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
 				<artifacts>
-					<artifact name="cats-kernel_2.11" type="jar" ext="jar" status="no" details="" size="3137785" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-kernel_2.11/jars/cats-kernel_2.11-1.0.1.jar">
+					<artifact name="cats-kernel_2.11" type="jar" ext="jar" status="successful" details="" size="3137785" time="1037" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-kernel_2.11/jars/cats-kernel_2.11-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.11/1.0.1/cats-kernel_2.11-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.typelevel" name="cats-macros_2.11">
-			<revision name="1.0.1" status="release" pubdate="20171231124459" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+			<revision name="1.0.1" status="release" pubdate="20171231124459" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2924" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-macros_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.11/1.0.1/cats-macros_2.11-1.0.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4162" time="75" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-macros_2.11/ivy-1.0.1.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/org.typelevel/cats-macros_2.11/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.11/1.0.1/cats-macros_2.11-1.0.1.pom"/>
 				<caller organisation="org.typelevel" name="cats-core_2.11" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
 				<artifacts>
-					<artifact name="cats-macros_2.11" type="jar" ext="jar" status="no" details="" size="6348" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-macros_2.11/jars/cats-macros_2.11-1.0.1.jar">
+					<artifact name="cats-macros_2.11" type="jar" ext="jar" status="successful" details="" size="6348" time="308" location="/home/jovyan/.ivy2/cache/org.typelevel/cats-macros_2.11/jars/cats-macros_2.11-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.11/1.0.1/cats-macros_2.11-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.typelevel" name="machinist_2.11">
-			<revision name="0.6.2" status="release" pubdate="20170601032704" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/typelevel/machinist" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="0.6.2" status="release" pubdate="20170601032704" resolver="public" artresolver="public" homepage="http://github.com/typelevel/machinist" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2785" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/machinist_2.11/ivy-0.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.2/machinist_2.11-0.6.2.pom"/>
+				<metadata-artifact status="successful" details="" size="1780" time="74" location="/home/jovyan/.ivy2/cache/org.typelevel/machinist_2.11/ivy-0.6.2.xml" searched="true" original-local-location="/home/jovyan/.ivy2/cache/org.typelevel/machinist_2.11/ivy-0.6.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.2/machinist_2.11-0.6.2.pom"/>
 				<caller organisation="org.typelevel" name="cats-macros_2.11" conf="compile, runtime" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.0.1"/>
 				<caller organisation="org.typelevel" name="cats-core_2.11" conf="default, compile, runtime, master" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.0.1"/>
 				<artifacts>
-					<artifact name="machinist_2.11" type="jar" ext="jar" status="no" details="" size="34603" time="0" location="/home/jovyan/.ivy2/cache/org.typelevel/machinist_2.11/jars/machinist_2.11-0.6.2.jar">
+					<artifact name="machinist_2.11" type="jar" ext="jar" status="successful" details="" size="34603" time="318" location="/home/jovyan/.ivy2/cache/org.typelevel/machinist_2.11/jars/machinist_2.11-0.6.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.2/machinist_2.11-0.6.2.jar"/>
 					</artifact>
 				</artifacts>

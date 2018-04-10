@@ -1,1 +1,101 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/fs2filetotcpsockettextstream_2.11-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/fs2filetotcpsockettextstream_2.11-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlideWrong$1$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlideWrong$1$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$4$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$4$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$4$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$namedACG$2$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$namedACG$2$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$threadFactoryFactoryProxyBeanFactory$2$$anon$3$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$threadFactoryFactoryProxyBeanFactory$2$$anon$3$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$5$1$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$5$1$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$main$1$$anonfun$apply$8$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$main$1$$anonfun$apply$8$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlideWrong$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlideWrong$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$1$$anonfun$apply$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$1$$anonfun$apply$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlideWrong$1$3$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlideWrong$1$3$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlideWrong$1$3$$anonfun$apply$6$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlideWrong$1$3$$anonfun$apply$6$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$sendStreamInTCP$1$1$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$sendStreamInTCP$1$1$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$throttlerPipe$1$1$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$throttlerPipe$1$1$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$chunkify$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$chunkify$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlide$1$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlide$1$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$namedACG$2$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$namedACG$2$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$5$1$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$5$1$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$3$1$$anonfun$apply$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$3$1$$anonfun$apply$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$1$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$1$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$main$1$$anonfun$apply$8$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$main$1$$anonfun$apply$8$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$namedACG$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$namedACG$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$2$1$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$2$1$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlide$1$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlide$1$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$threadFactoryFactoryProxyBeanFactory$2$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$threadFactoryFactoryProxyBeanFactory$2$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$vectorize$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$vectorize$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlideWrong$1$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlideWrong$1$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$1$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$1$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$sendStreamInTCP$1$1$$anonfun$apply$12.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$sendStreamInTCP$1$1$$anonfun$apply$12.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$intToBytes$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$intToBytes$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$threadFactoryFactoryProxyBeanFactory$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$threadFactoryFactoryProxyBeanFactory$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$3$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$3$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$main$1$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$main$1$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$stridedSlide$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$stridedSlide$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$throttlerPipe$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$throttlerPipe$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$4$1$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$4$1$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$3$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$3$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$backendImplicits$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$backendImplicits$2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$sendStreamInTCP$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$sendStreamInTCP$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$throttlerPipe$1$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$throttlerPipe$1$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$go$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$go$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$main$1$$anonfun$apply$13.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$main$1$$anonfun$apply$13.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$Main$$sendStreamInTCP$1$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jovyan/work/Master thesis/scripts/fs2FileToTCPSocketTextStream/target/scala-2.11/classes/Main$$anonfun$Main$$sendStreamInTCP$1$2.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

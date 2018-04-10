@@ -198,7 +198,7 @@ object Main {
                                                                                      // of electrode with the selected ID
                                                                                      // is then converted to Int
                 
-                .through(throttlerPipe(Fs, 0.125.second)) // make the stream near live speed by slowing it down
+                //.through(throttlerPipe(Fs, 0.125.second)) // make the stream near live speed by slowing it down
                                                           // to segments of 1250 integers being delivered each 0.125 second.
                                                           // This is near live streaming throughput with a sampling rate of 
                                                           // Fs: 10000 Hz
@@ -233,17 +233,28 @@ object Main {
                     case e: java.io.IOException => { 
                         println(s"Connection ended because of $e")
                         println("now exiting system")
-                        System.exit(0)                        
+                        System.exit(0)                       
                         Stream.empty 
                     }
-                    case _ => { println("I don't fuckin know..."); Stream.empty }
+                    case _ => { println("I don't fuckin know...")                        
+                        //System.exit(0)
+                        Stream.empty                        
+                    }
                 }
         }
         println(s"now starting the server on port $TCPPort")
+        /*
         server[IO](new InetSocketAddress("localhost", TCPPort))
             .flatMap(stream => stream.flatMap(socket => sendStreamInTCP[IO](socket, dataStream)))
             .compile
             .drain
             .unsafeRunSync()
+        */
+        // version that terminates the program after having sent the file to one client.
+        Stream.eval(fs2.async.signalOf[IO, Boolean](false)).flatMap { interruptSignal =>
+            server[IO](new InetSocketAddress("localhost", TCPPort))
+                .interruptWhen(interruptSignal)
+                .flatMap(stream => stream.flatMap(socket => sendStreamInTCP[IO](socket, dataStream)) ++ Stream.eval_(interruptSignal.set(true)))
+        }.compile.drain.unsafeRunSync()
     }
 }
